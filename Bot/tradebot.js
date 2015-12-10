@@ -72,6 +72,11 @@ steam.on('webSessionID', function(sessionID) {
 		});
 	});
 });
+// ################# System (in dev) ################//
+function onOffers(number) {
+
+
+}
 
 
 steam.on('sentry', function(data) {

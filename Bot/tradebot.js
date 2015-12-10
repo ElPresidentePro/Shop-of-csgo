@@ -26,7 +26,18 @@ var request = require("request");
 var steamuserinfo = require('steam-userinfo');
 
 steamuserinfo.setup("website steam api");
+// ################# MYSQL System ################//
+var mysqlInfo;
+mysqlInfo = {
+  host     : 'localhost',
+  user     : 'root',
+  password : 'password',
+  database : 'database',
+  charset  : 'utf8_general_ci'
+};
 
+var mysqlConnection = mysql.createConnection(mysqlInfo);
+// ################# System ################//
 var steam = new Steam.SteamClient();
 var offers = new SteamTradeOffers();
 
